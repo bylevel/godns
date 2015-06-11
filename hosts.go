@@ -144,7 +144,7 @@ func (f *FileHosts) isDomain(domain string) bool {
 	if f.isIP(domain) {
 		return false
 	}
-	match, _ := regexp.MatchString("^[a-zA-Z0-9][a-zA-Z0-9-]", domain)
+	match, _ := regexp.MatchString("^[a-zA-Z0-9]", domain)
 	return match
 }
 
